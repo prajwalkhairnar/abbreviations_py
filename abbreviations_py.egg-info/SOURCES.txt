@@ -1,0 +1,9 @@
+README.md
+setup.py
+abbreviations_py/__init__.py
+abbreviations_py.egg-info/PKG-INFO
+abbreviations_py.egg-info/SOURCES.txt
+abbreviations_py.egg-info/dependency_links.txt
+abbreviations_py.egg-info/top_level.txt
+abbreviations_py/textes/__init__.py
+abbreviations_py/textes/abbreviator.py
