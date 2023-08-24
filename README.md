@@ -9,7 +9,7 @@
 You can install `abbreviations_py` using `pip`:
 
 ```bash
-pip install abbreviations_py
+pip install git+https://github.com/prajwalkhairnar/abbreviations_py.git
 ```
 
 ## Usage
