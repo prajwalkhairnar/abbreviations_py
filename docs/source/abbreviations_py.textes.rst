@@ -1,6 +1,7 @@
 abbreviations\_py.textes package
 ================================
 
+
 Installation
 ------------
 .. code-block:: bash
@@ -16,19 +17,16 @@ abbreviations\_py.textes.abbreviator module
    :undoc-members:
    :show-inheritance:
 
-
-
-
 Usage Example
 -------------
 
 .. code-block:: python
 
-   from abbreviations_py.textes.abbreviator import abbreviate, update_abbreviations
+   from abbreviations_py.textes.abbreviator import fix, update_abbreviations
 
-   # Abbreviate text
+   # Fix abbreviated text
    input_text = "Hello! gr8 to meet you"
-   result = abbreviate(input_text)
+   result = fix(input_text)
    print(result)
 
    # Update abbreviation mappings
@@ -41,5 +39,3 @@ Usage Example
    update_abbreviations(new_mappings)
 
    
-
-

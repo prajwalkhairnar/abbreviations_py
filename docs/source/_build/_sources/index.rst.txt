@@ -1,5 +1,5 @@
 .. abbreviations_py documentation master file, created by
-   sphinx-quickstart on Wed Aug 23 22:44:02 2023.
+   sphinx-quickstart on Thu Aug 24 11:51:17 2023.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -18,4 +18,3 @@ Indices and tables
 
 * :ref:`genindex`
 * :ref:`modindex`
-

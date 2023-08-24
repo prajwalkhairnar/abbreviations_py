@@ -10,7 +10,7 @@ abbreviation_file_path = os.path.join(package_dir, "abbreviation_mappings.json")
 with open(abbreviation_file_path, "r") as json_file:
     abbreviation_mappings = json.load(json_file)
 
-def abbreviate(text):
+def fix(text):
     
     """
     Abbreviates the input text by removing punctuations and replacing abbreviations.
@@ -20,6 +20,10 @@ def abbreviate(text):
 
     Returns:
     str: The abbreviated text.
+
+	
+
+
     """
 
 

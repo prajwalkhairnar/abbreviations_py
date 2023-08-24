@@ -15,11 +15,11 @@ pip install git+https://github.com/prajwalkhairnar/abbreviations_py.git
 ## Usage
 
 ```python
-from abbreviations_py.textes.abbreviator import abbreviate, update_abbreviations
+from abbreviations_py.textes import fix, update_abbreviations
 
 # Abbreviate text
 input_text = "Hello! gr8 to meet you"
-result = abbreviate(input_text)
+result = fix(input_text)
 print(result)
 
 # Update abbreviation mappings

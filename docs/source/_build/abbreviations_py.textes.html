@@ -83,8 +83,8 @@
 <div class="section" id="module-abbreviations_py.textes.abbreviator">
 <span id="abbreviations-py-textes-abbreviator-module"></span><h2>abbreviations_py.textes.abbreviator module<a class="headerlink" href="#module-abbreviations_py.textes.abbreviator" title="Permalink to this headline"></a></h2>
 <dl class="py function">
-<dt id="abbreviations_py.textes.abbreviator.abbreviate">
-<code class="sig-prename descclassname">abbreviations_py.textes.abbreviator.</code><code class="sig-name descname">abbreviate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#abbreviations_py.textes.abbreviator.abbreviate" title="Permalink to this definition"></a></dt>
+<dt id="abbreviations_py.textes.abbreviator.fix">
+<code class="sig-prename descclassname">abbreviations_py.textes.abbreviator.</code><code class="sig-name descname">fix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#abbreviations_py.textes.abbreviator.fix" title="Permalink to this definition"></a></dt>
 <dd><p>Abbreviates the input text by removing punctuations and replacing abbreviations.</p>
 <p>Parameters:
 text (str): The input text to be abbreviated.</p>
@@ -105,11 +105,11 @@ None</p>
 </div>
 <div class="section" id="usage-example">
 <h2>Usage Example<a class="headerlink" href="#usage-example" title="Permalink to this headline"></a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abbreviations_py.textes.abbreviator</span> <span class="kn">import</span> <span class="n">abbreviate</span><span class="p">,</span> <span class="n">update_abbreviations</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abbreviations_py.textes.abbreviator</span> <span class="kn">import</span> <span class="n">fix</span><span class="p">,</span> <span class="n">update_abbreviations</span>
 
-<span class="c1"># Abbreviate text</span>
+<span class="c1"># Fix abbreviated text</span>
 <span class="n">input_text</span> <span class="o">=</span> <span class="s2">&quot;Hello! gr8 to meet you&quot;</span>
-<span class="n">result</span> <span class="o">=</span> <span class="n">abbreviate</span><span class="p">(</span><span class="n">input_text</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">fix</span><span class="p">(</span><span class="n">input_text</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 
 <span class="c1"># Update abbreviation mappings</span>
