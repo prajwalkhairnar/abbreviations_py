@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>abbreviations_py.textes package &mdash; abbreviations_py 0.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to abbreviations_py’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            abbreviations_py
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">abbreviations_py.textes package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-abbreviations_py.textes.abbreviator">abbreviations_py.textes.abbreviator module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage-example">Usage Example</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">abbreviations_py</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">abbreviations_py.textes package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/abbreviations_py.textes.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="abbreviations-py-textes-package">
+<h1>abbreviations_py.textes package<a class="headerlink" href="#abbreviations-py-textes-package" title="Permalink to this headline"></a></h1>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h2>
+</div>
+<div class="section" id="module-abbreviations_py.textes.abbreviator">
+<span id="abbreviations-py-textes-abbreviator-module"></span><h2>abbreviations_py.textes.abbreviator module<a class="headerlink" href="#module-abbreviations_py.textes.abbreviator" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt id="abbreviations_py.textes.abbreviator.abbreviate">
+<code class="sig-prename descclassname">abbreviations_py.textes.abbreviator.</code><code class="sig-name descname">abbreviate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#abbreviations_py.textes.abbreviator.abbreviate" title="Permalink to this definition"></a></dt>
+<dd><p>Abbreviates the input text by removing punctuations and replacing abbreviations.</p>
+<p>Parameters:
+text (str): The input text to be abbreviated.</p>
+<p>Returns:
+str: The abbreviated text.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="abbreviations_py.textes.abbreviator.update_abbreviations">
+<code class="sig-prename descclassname">abbreviations_py.textes.abbreviator.</code><code class="sig-name descname">update_abbreviations</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_mappings</span></em><span class="sig-paren">)</span><a class="headerlink" href="#abbreviations_py.textes.abbreviator.update_abbreviations" title="Permalink to this definition"></a></dt>
+<dd><p>Updates the abbreviation mappings dictionary with new key-value pairs.</p>
+<p>Parameters:
+new_mappings (dict): The new key-value pairs to add to the abbreviation mappings.</p>
+<p>Returns:
+None</p>
+</dd></dl>
+
+</div>
+<div class="section" id="usage-example">
+<h2>Usage Example<a class="headerlink" href="#usage-example" title="Permalink to this headline"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abbreviations_py.textes.abbreviator</span> <span class="kn">import</span> <span class="n">abbreviate</span><span class="p">,</span> <span class="n">update_abbreviations</span>
+
+<span class="c1"># Abbreviate text</span>
+<span class="n">input_text</span> <span class="o">=</span> <span class="s2">&quot;Hello! gr8 to meet you&quot;</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">abbreviate</span><span class="p">(</span><span class="n">input_text</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+<span class="c1"># Update abbreviation mappings</span>
+<span class="n">new_mappings</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;gr8&quot;</span><span class="p">:</span> <span class="s2">&quot;great&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;txt&quot;</span><span class="p">:</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span>
+    <span class="c1"># Add more mappings here</span>
+<span class="p">}</span>
+
+<span class="n">update_abbreviations</span><span class="p">(</span><span class="n">new_mappings</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to abbreviations_py’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Prajwal Khairnar.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
