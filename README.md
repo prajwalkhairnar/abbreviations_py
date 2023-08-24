@@ -15,7 +15,7 @@ pip install abbreviations_py
 ## Usage
 
 ```python
-from abbreviations_py.textes import abbreviate, update_abbreviations
+from abbreviations_py.textes.abbreviator import abbreviate, update_abbreviations
 
 # Abbreviate text
 input_text = "Hello! gr8 to meet you"
