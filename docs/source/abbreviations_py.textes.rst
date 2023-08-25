@@ -6,7 +6,7 @@ Installation
 ------------
 .. code-block:: bash
 
-   pip install git+https://github.com/prajwalkhairnar/abbreviations_py.git
+   pip install abbreviations_py
 
 
 abbreviations\_py.textes.abbreviator module
