@@ -17,17 +17,19 @@ pip install git+https://github.com/prajwalkhairnar/abbreviations_py.git
 ```python
 from abbreviations_py.textes.abbreviator import fix, update_abbreviations
 
-# Abbreviate text
-input_text = "Hello! gr8 to meet you"
+# Fix abbreviated text
+input_text = "I'll txt you when you're back, ttyl! #BonVoyage"
 result = fix(input_text)
 print(result)
+# Output: I will text you when you are back talk to you later
 
 # Update abbreviation mappings
 new_mappings = {
-    "gr8": "great",
+    "ttyl": "talk to you later",
     "txt": "text",
     # Add more mappings here
 }
+
 update_abbreviations(new_mappings)
 ```
 
