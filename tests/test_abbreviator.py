@@ -21,8 +21,8 @@ class TestAbbreviator(unittest.TestCase):
         expected_output = "laugh out loud talk to you later"
 
         new_mappings = {
-            "LOL": "laugh out loud",
-            "TTYL": "talk to you later"
+            "lol": "laugh out loud",
+            "ttyl": "talk to you later"
         }
         update_abbreviations(new_mappings)
 
@@ -38,8 +38,8 @@ class TestAbbreviator(unittest.TestCase):
         self.assertEqual(fix(input_text), "")
 
     def test_input_with_punctuations(self):
-        input_text = "Hello, gr8! How are you?"
-        expected_output = "hello great how are you"
+        input_text = "I'll see you when you're back, ttyl!"
+        expected_output = "I will see you when you are back talk to you later"
         self.assertEqual(fix(input_text), expected_output)
 
 if __name__ == '__main__':
