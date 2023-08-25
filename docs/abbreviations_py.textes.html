@@ -85,11 +85,11 @@
 <dl class="py function">
 <dt id="abbreviations_py.textes.abbreviator.fix">
 <code class="sig-prename descclassname">abbreviations_py.textes.abbreviator.</code><code class="sig-name descname">fix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#abbreviations_py.textes.abbreviator.fix" title="Permalink to this definition"></a></dt>
-<dd><p>Abbreviates the input text by removing punctuations and replacing abbreviations.</p>
+<dd><p>Fixes the abbreviated input text by replacing abbreviations, removing punctuations and hashtag terms.</p>
 <p>Parameters:
-text (str): The input text to be abbreviated.</p>
+text (str): The input abbreviated text to be fixed.</p>
 <p>Returns:
-str: The abbreviated text.</p>
+str: The fixed text.</p>
 </dd></dl>
 
 <dl class="py function">
@@ -108,13 +108,14 @@ None</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abbreviations_py.textes.abbreviator</span> <span class="kn">import</span> <span class="n">fix</span><span class="p">,</span> <span class="n">update_abbreviations</span>
 
 <span class="c1"># Fix abbreviated text</span>
-<span class="n">input_text</span> <span class="o">=</span> <span class="s2">&quot;Hello! gr8 to meet you&quot;</span>
+<span class="n">input_text</span> <span class="o">=</span> <span class="s2">&quot;I&#39;ll txt you when you&#39;re back, ttyl! #BonVoyage&quot;</span>
 <span class="n">result</span> <span class="o">=</span> <span class="n">fix</span><span class="p">(</span><span class="n">input_text</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="c1"># Output: I will text you when you are back talk to you later</span>
 
 <span class="c1"># Update abbreviation mappings</span>
 <span class="n">new_mappings</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;gr8&quot;</span><span class="p">:</span> <span class="s2">&quot;great&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;ttyl&quot;</span><span class="p">:</span> <span class="s2">&quot;talk to you later&quot;</span><span class="p">,</span>
     <span class="s2">&quot;txt&quot;</span><span class="p">:</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span>
     <span class="c1"># Add more mappings here</span>
 <span class="p">}</span>
