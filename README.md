@@ -2,7 +2,8 @@
 
 # abbreviations_py
 
-`abbreviations_py` is a Python package that provides a convenient way to abbreviate and normalize text. It offers functionality to clean text by replacing common abbreviations with their full forms, removing punctuations and hashtags.
+`abbreviations_py` is a Python package that provides a convenient way to abbreviate and normalize text. It offers functionality to clean text by replacing common abbreviations with their full forms, removing punctuations and hashtags.<br><br>
+<a href = 'https://prajwalkhairnar.github.io/abbreviations_py/'><b>Click here for the documentation</b><a>. 
 
 ## Installation
 
